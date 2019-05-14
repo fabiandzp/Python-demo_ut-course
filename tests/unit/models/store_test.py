@@ -1,5 +1,5 @@
-from video_code.models.store import StoreModel
-from video_code.tests.base_test import BaseTest
+from models.store import StoreModel
+from tests.base_test import BaseTest
 
 
 class StoreTest(BaseTest):

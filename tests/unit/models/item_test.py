@@ -1,5 +1,5 @@
-from video_code.models.item import ItemModel
-from video_code.tests.base_test import BaseTest
+from models.item import ItemModel
+from tests.base_test import BaseTest
 
 
 class ItemTest(BaseTest):
