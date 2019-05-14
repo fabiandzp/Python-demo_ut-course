@@ -4,10 +4,10 @@ from flask import Flask, jsonify
 from flask_restful import Api
 from flask_jwt import JWT, JWTError
 
-from video_code.security import authenticate, identity
-from video_code.resources.user import UserRegister
-from video_code.resources.item import Item, ItemList
-from video_code.resources.store import Store, StoreList
+from security import authenticate, identity
+from resources.user import UserRegister
+from resources.item import Item, ItemList
+from resources.store import Store, StoreList
 
 app = Flask(__name__)
 #d
@@ -35,7 +35,7 @@ def auth_error(err):
 
 
 if __name__ == '__main__':
-    from video_code.db import db
+    from db import db
 
     db.init_app(app)
 
